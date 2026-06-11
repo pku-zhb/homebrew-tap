@@ -7,8 +7,6 @@ cask "agent-status-bar" do
   desc "Menu bar app for tracking Codex and Claude Code sessions"
   homepage "https://github.com/pku-zhb/agent-status-bar"
 
-  depends_on macos: ">= :ventura"
-
   app "AgentStatusBar.app"
 
   postflight do
