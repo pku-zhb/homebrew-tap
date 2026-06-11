@@ -1,13 +1,41 @@
-# homebrew-termy
+# homebrew-tap
 
-Homebrew tap for `termy-server` — the Rust PTY backend of the
-[Termy](https://github.com/pku-zhb/Termy) Obsidian plugin (魔改 fork).
+Personal Homebrew tap for pku-zhb tools.
 
-## Install
+## Setup
 
+```sh
+brew tap pku-zhb/tap
 ```
-brew install pku-zhb/termy/termy-server
+
+## Packages
+
+### Agent Status Bar
+
+macOS menu bar app for tracking local Codex and Claude Code sessions.
+
+```sh
+brew install --cask agent-status-bar
 ```
 
-二进制会装到 Homebrew 的 bin 目录（如 `/opt/homebrew/bin/termy-server`），
-插件会自动探测到。升级：`brew upgrade termy-server`。
+Upgrade:
+
+```sh
+brew update
+brew upgrade --cask agent-status-bar
+```
+
+### termy-server
+
+Rust PTY backend for the [Termy](https://github.com/pku-zhb/Termy) Obsidian plugin.
+
+```sh
+brew install termy-server
+```
+
+Upgrade:
+
+```sh
+brew update
+brew upgrade termy-server
+```
