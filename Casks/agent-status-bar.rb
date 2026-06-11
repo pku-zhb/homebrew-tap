@@ -1,6 +1,6 @@
 cask "agent-status-bar" do
-  version "0.1.4"
-  sha256 "1599520d8704e96ca6d25bd33ac5e2c81e44e551db3245a79669d4bfbd8db562"
+  version "0.1.5"
+  sha256 "7341c0887fe31876b63a809c35f8b0d5e6937b261f503f31e946acf386f3f770"
 
   url "https://github.com/pku-zhb/agent-status-bar/releases/download/v#{version}/AgentStatusBar-v#{version}.zip"
   name "Agent Status Bar"
