@@ -1,6 +1,6 @@
 cask "agent-status-bar" do
-  version "0.1.0"
-  sha256 "9174cbfbbe5f8f41a8ab926d6735fa71a128f5d7c3e9b45d193c1511782c7fa8"
+  version "0.1.1"
+  sha256 "7e8c56596ee4345a84fb7b07e6615e48f46d873fe646327854134a0ee14caf7a"
 
   url "https://github.com/pku-zhb/agent-status-bar/releases/download/v#{version}/AgentStatusBar-v#{version}.zip"
   name "Agent Status Bar"
@@ -10,6 +10,12 @@ cask "agent-status-bar" do
   depends_on macos: :ventura
 
   app "AgentStatusBar.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/AgentStatusBar.app"],
+                   must_succeed: false
+  end
 
   zap trash: [
     "~/Library/Preferences/com.zhuhuibin.AgentStatusBar.plist",
