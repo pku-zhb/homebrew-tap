@@ -1,6 +1,6 @@
 cask "agent-status-bar" do
-  version "0.1.11"
-  sha256 "cc1e76957cdc9de88c0cb732ad8f077089b31daf25e3caa83ec5ba285694e43d"
+  version "0.1.12"
+  sha256 "f8e26686492685722bf0f6a8bc06077533c79ae019c20e6aad8611c6443a4c70"
 
   url "https://github.com/pku-zhb/agent-status-bar/releases/download/v#{version}/AgentStatusBar-v#{version}.zip"
   name "Agent Status Bar"
@@ -26,6 +26,8 @@ cask "agent-status-bar" do
 
   zap trash: [
     "~/Library/Preferences/com.zhuhuibin.AgentStatusBar.plist",
+    "~/Library/Preferences/com.zhuhuibin.agentstatusbar.plist",
     "~/Library/Saved Application State/com.zhuhuibin.AgentStatusBar.savedState",
+    "~/Library/Saved Application State/com.zhuhuibin.agentstatusbar.savedState",
   ]
 end
