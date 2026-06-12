@@ -7,7 +7,7 @@ class TermyServer < Formula
   on_macos do
     on_arm do
       url "https://github.com/pku-zhb/Termy/releases/download/1.5.0/termy-server-darwin-arm64"
-      sha256 "abdc9db44afce6c5aea44707bb6554ee76efe6253d325f730542a431356a8199"
+      sha256 "16fb30e15d69a6032511716070e0ef3cf986d1cd1aaba902ce4bd461bbc9317d"
     end
     # Intel 款 Mac 需要在 release 里补一个 termy-server-darwin-x86_64 资产，再加 on_intel 块。
   end
